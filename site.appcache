@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# v1
+
+# Cached
+# CACHE:
+# css/style.css
+# css/reset.css
+# scripts/custom.js
+# scripts/plugins.js
+# scripts/libs/jquery-1.9.1.min.js
+# scripts/libs/modernizr-2.6.2.min.js
+# index.php
+
+# Online only
+# NETWORK:
+
+# Fallbacks
+# FALLBACK:

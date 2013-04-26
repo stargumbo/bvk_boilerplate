@@ -1,0 +1,65 @@
+RewriteEngine On
+RewriteBase "/"
+
+# Prevent access to .svn folders, .htaccess and other system files
+RedirectMatch 404 /\\.svn(/.*|$)
+RedirectMatch 404 /(|dist)\.htaccess$
+RedirectMatch 404 /.*\.(sql|log|dist|bak)$
+RedirectMatch 404 ^/~user/client/project/(cmd|config|templates|snippets|third_party|documentation)(/.*|$)
+
+# Vanity URLs (use these instead of Redirect 301)
+# See this thread: http://stackoverflow.com/questions/5517420/apache-added-a-in-htaccess-301-redirect
+# RewriteRule ^expandyourtaste[\/]?$ http://domain.com/mobile/expandyourtaste/ [R=301,L,NC]
+
+# Remove the www
+# RewriteCond %{HTTP_HOST} ^www.domain.com$ [NC]
+# RewriteRule ^(.*)$ http://domain.com/$1 [R=301,L]
+
+# Add the www
+# RewriteCond %{HTTP_HOST} ^domain.com$ [NC]
+# RewriteRule ^(.*)$ http://www.domain.com/$1 [R=301,L]
+
+# Add a trailing slash to paths without an extension
+# RewriteCond %{REQUEST_METHOD} !=POST
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+
+# use utf-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
+
+# force utf-8 for a number of file formats
+AddCharset utf-8 .html .css .js .xml .json .rss
+
+# HTC Files (for IE hacks)
+AddType text/x-component .htc
+
+# MIME TYPES
+# Audio
+AddType audio/aac .aac
+AddType audio/mp4 .mp4 .m4a
+AddType audio/mpeg .mp1 .mp2 .mp3 .mpg .mpeg
+AddType audio/ogg .oga .ogg
+AddType audio/wav .wav
+AddType audio/webm .webm
+
+# Video
+AddType video/mp4 .mp4 .m4v
+AddType video/ogg .ogv
+AddType video/webm .webm
+
+# Webfonts
+AddType application/vnd.ms-fontobject eot
+AddType font/ttf                      ttf
+AddType font/otf                      otf
+AddType font/x-woff                   woff
+
+# Appcache
+AddType text/cache-manifest .appcache
+
+# Force the latest IE version, in various cases when it may fall back to IE7 mode
+<IfModule mod_setenvif.c>
+     <IfModule mod_headers.c>
+          BrowserMatch MSIE ie
+          Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+     </IfModule>
+</IfModule>

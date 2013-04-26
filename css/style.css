@@ -1,0 +1,88 @@
+@import url('../css/reset.css');
+
+/**********************************
+	Table of Contents
+	
+	1.  Base Styles
+	2.  Header Styles		~hs~
+	3-  Body Styles 		~bs~
+	  1.  PAGE_NAME			~bs01~
+	4.  Footer Styles		~fs~
+	5.  Plugin Styles		~ps~
+	6.  Media Queries		~mq~
+	
+**********************************/
+.group{zoom:1;}
+.group:before, .group:after{content:"\0020"; display:block; height:0; overflow:hidden;}
+.group:after{clear:both;}
+html {
+	
+}
+body {
+	
+}
+p {
+
+}
+a {
+	
+}
+h1 {
+
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+	
+}
+h5 {
+	
+}
+h6 {
+	
+}
+ul {
+	
+}
+li {
+	
+}
+#container {
+	width:100%;
+	margin:0 auto;
+}
+/**********************************
+	2.  Header Styles	~hs~
+**********************************/
+#header {
+
+}
+/**********************************
+	3.  Body Styles		~bs~
+**********************************/
+#main {
+	
+}
+/**********************************
+	3-1.  PAGE_NAME 	~bs01~
+**********************************/
+#PAGE_NAME {
+
+}
+/**********************************
+	4.  Footer Styles	~fs~
+**********************************/
+#footer {
+	
+}
+/**********************************
+	5.  Plugin Styles	~ps~
+**********************************/
+
+/**********************************
+	6.  Media Queries	~mq~
+**********************************/
