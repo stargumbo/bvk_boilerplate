@@ -1,88 +1,57 @@
 @import url('../css/reset.css');
+/**********************************
+    Table of Contents
+    
+    1.  Base Styles
+    2.  Header Styles        ~hs~
+    3-  Body Styles         ~bs~
+      1.  PAGE_NAME            ~bs01~
+    4.  Footer Styles        ~fs~
+    5.  Plugin Styles        ~ps~
+    6.  Media Queries        ~mq~
+    
+**********************************/
+.group { zoom: 1 }
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.group:after { clear: both }
+html { }
+body { }
+p { }
+a { }
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+ul { }
+li { }
+#container { width: 100%; margin: 0 auto; }
 
 /**********************************
-	Table of Contents
-	
-	1.  Base Styles
-	2.  Header Styles		~hs~
-	3-  Body Styles 		~bs~
-	  1.  PAGE_NAME			~bs01~
-	4.  Footer Styles		~fs~
-	5.  Plugin Styles		~ps~
-	6.  Media Queries		~mq~
-	
+    2.  Header Styles    ~hs~
 **********************************/
-.group{zoom:1;}
-.group:before, .group:after{content:"\0020"; display:block; height:0; overflow:hidden;}
-.group:after{clear:both;}
-html {
-	
-}
-body {
-	
-}
-p {
+#header { }
 
-}
-a {
-	
-}
-h1 {
+/**********************************
+    3.  Body Styles        ~bs~
+**********************************/
+#main { }
 
-}
-h2 {
-	
-}
-h3 {
-	
-}
-h4 {
-	
-}
-h5 {
-	
-}
-h6 {
-	
-}
-ul {
-	
-}
-li {
-	
-}
-#container {
-	width:100%;
-	margin:0 auto;
-}
 /**********************************
-	2.  Header Styles	~hs~
+    3-1.  PAGE_NAME     ~bs01~
 **********************************/
-#header {
+#PAGE_NAME { }
 
-}
 /**********************************
-	3.  Body Styles		~bs~
+    4.  Footer Styles    ~fs~
 **********************************/
-#main {
-	
-}
-/**********************************
-	3-1.  PAGE_NAME 	~bs01~
-**********************************/
-#PAGE_NAME {
+#footer { }
 
-}
 /**********************************
-	4.  Footer Styles	~fs~
-**********************************/
-#footer {
-	
-}
-/**********************************
-	5.  Plugin Styles	~ps~
+    5.  Plugin Styles    ~ps~
 **********************************/
 
 /**********************************
-	6.  Media Queries	~mq~
+    6.  Media Queries    ~mq~
 **********************************/
